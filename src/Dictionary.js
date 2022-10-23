@@ -16,7 +16,10 @@ export default function Dictionary() {
       <form onSubmit={search}>
               <input type="search" onChange={updateSearch}/>
               <input type="submit"/>
-          </form>
+      </form>
+      <h3>
+        {keyword}
+      </h3>
     </div>
   );
 }
