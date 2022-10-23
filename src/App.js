@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import Dictionary from "./Dictionary";
 
 function App() {
@@ -11,7 +11,11 @@ function App() {
         </main>
         <footer>
           Coded by{" "}
-          <a href="https://github.com/zuzanna-stepnicka/dictionary-project" target="_blank">
+          <a
+            href="https://github.com/zuzanna-stepnicka/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
             Zuzanna Stepnicka
           </a>
           .
