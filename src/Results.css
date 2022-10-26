@@ -1,0 +1,17 @@
+.container {
+  max-width: 500px;
+  padding: 0 auto;
+}
+.word {
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+}
+.partOfSpeech {
+  color: rgb(203, 62, 62);
+  font-size: 15px;
+  font-style: italic;
+}
+.definition_1 {
+  font-size: 20px;
+}
