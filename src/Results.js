@@ -5,6 +5,12 @@ export default function Results(props) {
   return (
     <div className="container">
       <div className="word">{props.results.word}</div>
+      <div className="phonetics">{props.results.phonetics}</div>
+      <div className="phoneticsAudio">
+       <a href={props.results.phoneticsAudio} target="_blank">
+          Listen here
+        </a>
+      </div>
       <div className="parfOfSpeech">{props.results.partOfSpeech}</div>
       <div className="definition_1">{props.results.definition_1}</div>
     </div>

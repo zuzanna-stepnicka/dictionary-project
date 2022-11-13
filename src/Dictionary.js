@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Synonyms from "./Synonyms";
-
-
 import Results from "./Results";
 
 export default function Dictionary() {
@@ -12,11 +10,15 @@ export default function Dictionary() {
   let [synonyms, updateSynonyms] = useState(null);
 
   function showResults(response) {
-    
+
+    console.log(response);
+
     updateResults({
       word: response.data[0].word,
       partOfSpeech: response.data[0].meanings[0].partOfSpeech,
       definition_1: response.data[0].meanings[0].definitions[0].definition,
+      phonetics: response.data[0].phonetics[0].text,
+      phoneticsAudio: response.data[0].phonetics[0].audio,
     });
 
     updateSynonyms(
