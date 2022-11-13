@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Synonyms from "./Synonyms";
+
 
 import Results from "./Results";
 
@@ -7,6 +9,7 @@ export default function Dictionary() {
   let [keyword, updateKeyword] = useState("");
   let [loaded, setLoaded] = useState(false);
   let [results, updateResults] = useState({});
+  let [synonyms, updateSynonyms] = useState(null);
 
   function showResults(response) {
     
@@ -15,6 +18,10 @@ export default function Dictionary() {
       partOfSpeech: response.data[0].meanings[0].partOfSpeech,
       definition_1: response.data[0].meanings[0].definitions[0].definition,
     });
+
+    updateSynonyms(
+      synonyms = response.data[0].meanings[0].synonyms
+    )
     
   }
 
@@ -45,7 +52,8 @@ export default function Dictionary() {
     return (
       <div>
         <div>{form}</div>
-        <Results results={results}/>
+        <Results results={results} />
+        <Synonyms synonyms={synonyms}/>
       </div>
     );
   } else {
