@@ -1,17 +1,21 @@
 .container {
   max-width: 500px;
-  padding: 0 auto;
+  padding: 20px 20px 20px 0px;
 }
-.word {
+.container section{
+  padding: 20px 20px 20px 0px;
+}
+.container .word {
   font-weight: bold;
   font-size: 30px;
   font-style: italic;
 }
-.partOfSpeech {
-  color: rgb(203, 62, 62);
-  font-size: 15px;
+.container section .parfOfSpeech {
+  font-size: 18px;
   font-style: italic;
+
 }
-.definition_1 {
+.container section .definition_1 {
+  padding: 10px 10px 10px 0px;
   font-size: 20px;
 }

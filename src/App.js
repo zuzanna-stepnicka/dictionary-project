@@ -15,6 +15,7 @@ function App() {
             href="https://github.com/zuzanna-stepnicka/dictionary-project"
             target="_blank"
             rel="noreferrer"
+            
           >
             Zuzanna Stepnicka
           </a>

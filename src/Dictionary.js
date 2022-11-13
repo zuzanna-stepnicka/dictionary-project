@@ -3,6 +3,8 @@ import axios from "axios";
 import Synonyms from "./Synonyms";
 import Results from "./Results";
 
+import "./Dictionary.css";
+
 export default function Dictionary() {
   let [keyword, updateKeyword] = useState("");
   let [loaded, setLoaded] = useState(false);
@@ -43,10 +45,10 @@ export default function Dictionary() {
 
   let form = (
     
-    <form onSubmit={search}>
-      <input type="search" onChange={updateSearch} />
-      <input type="submit" />
-    </form>
+        <form onSubmit={search}>
+          <input type="search" onChange={updateSearch} />
+          <input type="submit" />
+        </form>
     
   );
 
