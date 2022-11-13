@@ -7,7 +7,7 @@ export default function Results(props) {
       <div className="word">{props.results.word}</div>
       <div className="phonetics">{props.results.phonetics}</div>
       <div className="phoneticsAudio">
-       <a href={props.results.phoneticsAudio} target="_blank">
+        <a href={props.results.phoneticsAudio} target="_blank" rel="noreferrer">
           Listen here
         </a>
       </div>
