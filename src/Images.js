@@ -10,7 +10,7 @@ export default function Images(props) {
           <section className="photos">
             <div className="row">
               {props.images.map(function (image, index) {
-                return <div className="col-4"> <img src={image.src.tiny} /> </div>;
+                return <div className="col-4"> <img src={image.src.tiny} alt=""/> </div>;
               })}
             </div>
           </section>
